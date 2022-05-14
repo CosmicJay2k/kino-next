@@ -5,7 +5,7 @@ export default function LatestMovies({ movies }) {
   const moviesList = movies.map((movie) => {
     return (
       <li key={movie.id}>
-        <Link href={`/movies/${movie.id}`}>
+        <Link href={`/movies/${movie.id}`} passHref>
           <div
             className={styles["poster"]}
             style={{ backgroundImage: `url("${movie.img}")` }}
