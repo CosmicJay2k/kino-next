@@ -58,6 +58,7 @@ export default function Post({ movie, screenings }) {
                 className={styles["image"]}
                 src={movie.img}
                 layout="fill"
+                alt="Movie poster"
               />
             </div>
           </div>
@@ -66,7 +67,6 @@ export default function Post({ movie, screenings }) {
           <RightSidebar screenings={screenings} movie={movie} />
         </div>
       </main>
-
     </div>
   );
 }
