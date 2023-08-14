@@ -1,0 +1,77 @@
+ul.seat-list {
+  width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul.seat-list li {
+  
+  float: left;
+  list-style-type: none
+}
+.total-price {
+  color: #fff;
+  position: relative;
+  transform: translate(40% );
+  font-size: 25px ;
+}
+ul.seat-list label {
+  border-radius: 50% 50% 1px 2px;
+  box-shadow: -1px -1px 5px;
+  display: inline-block;
+  position:relative;
+  
+  transform: translate(0%);
+  width: 100px;
+  color: #fff;
+  background: rgb(12, 133, 177);
+  text-align: center;
+  line-height: 70px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.25s ease 0s;
+  -webkit-transition: all 0.25s;
+  margin:5px;
+  
+}
+
+ul.seat-list label:hover {
+  background: red;
+}
+
+ul.seat-list label:active {
+  transition: 0;
+  -webkit-transition: 0;
+  -webkit-filter: brightness(.8);
+}
+
+ul.seat-list input {
+  display: none;
+}
+
+ul.seat-list input:checked + label {
+  background: green;
+  color: #fff;
+}
+.pay-button{
+  height: 50px;
+  width: 150px;
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  background-color: rgb(147, 10, 10);
+
+}
+
+.pay-button:hover{
+ 
+  background-color: rgb(0, 255, 0);
+}
+
+.title{
+  color: #ffffff;
+  position: relative;
+  transform:translate(40%);
+}

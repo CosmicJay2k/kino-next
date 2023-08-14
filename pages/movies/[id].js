@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../../styles/Movie.module.css";
-
+import Link from "next/link";
 import RightSidebar from "../../components/RightSidebar";
 
 import connectDb from "../../DB/connectDb";
@@ -66,7 +66,12 @@ export default function Post({ movie, screenings }) {
         <div className={styles["right-container"]}>
           <RightSidebar screenings={screenings} movie={movie} />
         </div>
+        
       </main>
+      <Link href="/salonDetails">
+        <button className={styles["buy-button"]}>Buy this movie</button>
+      </Link>
+      
     </div>
   );
 }
